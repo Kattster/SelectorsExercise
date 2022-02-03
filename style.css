@@ -1,0 +1,114 @@
+/* 2 Give the body element a background of #CED4D8 */
+body {
+    background-color: #CED4D8
+}
+
+/* 3 Make the h1 element #AC6AC7 */
+h1 {
+    color: #AC6AC7;
+}
+
+/* 4 Make all h2 elements rgb(255,165,0) */
+h2 {
+    color: rgb(255,165,0);
+}
+
+/* 5 Make all li elements blue */
+li {
+    color: blue;
+}
+
+/* 6 /* 5 Change the background on every paragraph to be gold */
+p {
+    background-color: gold;
+}
+/* 7 Make all inputs with the type of text or email have a 5px pink dotted border*/
+input [email] {
+    border: 5px dotted pink;
+}
+
+/* 8 Give everything with the class ‘first’ an #fff background*/
+.first {
+    background-color: #fff;
+}
+/* 9 Give the element with id ‘important’ a 3px blue dashed border (Use hexidecimal to create a blue color) */
+#important {
+    border: 3px dashed; color: #0000ff
+}
+
+/* 10 Make all the p elements that are nested inside of divs 30px font (font-size: 30px) */
+div p {
+    font-size: 30px;
+}
+
+/* 11 Make only inputs with type ‘email’ have a #808080 background */
+input[type=email] {
+    background-color: #808080; 
+}
+
+/* 12 Give both p elements inside the 3rd div a hot pink background*/
+div:nth-of-type(3) p {
+    background-color: hotpink;
+}
+
+/* 13 Give the 2nd p element inside the 3rd div a 7px solid rgb(255, 255, 255) border */
+/* div:nth-of-type(3) p {
+    border: 7px solid rgb(255, 255, 255);
+} */
+
+div:nth-of-type(3) :nth-child(3) {
+    border: 7px solid rgb(255, 255, 255);
+}
+
+/* 14 Make the text in the em tag/element in the 3rd div element seashell color and 25px font (font-size:25px) */
+div p em {
+    color: seashell;
+    font-size: 25px;
+} 
+
+/* OR 
+em {
+    color: seashell;
+    font-size: 25px;
+}
+*/
+            
+/* Bonus 1 
+Make all “checked” checkboxes have a left margin of 40px */
+/* input:checked {
+    margin-left: 40px;
+} */
+:checked {
+    margin-left: 40px;
+}
+
+
+/* Bonus 2 
+Make the text in all the label elements lowercase (Remember you cannot change the HTML file) */
+label {
+    text-transform: lowercase;
+}
+/* Bonus 3 Make the first letter of the element with id ‘important’ lime color and 90px font size
+ */
+ #important::first-letter {
+     text-transform: uppercase;
+     color: lime;
+     font-size: 90px;
+ }
+/* Bonus 4 Make the h1 element’s color change to navy when hovered over
+ */
+ h1:hover {
+     color: navy;
+ }
+/* Bonus 5 Make the a tags that have been visited silver
+ */
+ a:visited {
+     color: silver; 
+ }
+ a {
+    background-color: navy;
+ }
+
+/*  */
+/*  */
+
